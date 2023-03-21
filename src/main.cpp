@@ -6,6 +6,8 @@ using namespace cv;
 int main(){
     cv::Mat imMat(400,400, CV_8UC3);
 
+    std::cout << "Test" << std::endl;
+
     for(int y = 0 ; y < imMat.rows; y++){
         for(int x = 0 ; x < imMat.cols; x++){
             cv::Vec3b &p = imMat.at<cv::Vec3b>( y, x);
